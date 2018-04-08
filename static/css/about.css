@@ -1,0 +1,47 @@
+/* Стили для блока "О команде" */
+
+#about {
+    line-height: 1.25em;
+}
+
+#about .title {
+    color: #ffebad;
+    line-height: 1.25em;
+    text-align: center;
+    padding-top: 3.5%;
+}
+
+#about hr {
+    width: 50%;
+}
+
+#about .about {
+    margin: 3.5%;
+    min-height: 14em;
+    text-align: justify;
+}
+
+#about .about .photo {
+    float: right;
+    margin: 0 0 1em 1em;
+    height: 14em;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+#about span.selected {
+    color: #ffebad;
+    font-weight: bold;
+}
+
+/* Стили для узких экранов */
+
+@media (max-width: 750px) {
+    /* Фотография по середине экрана */
+    #about .photo {
+        width: 90% !important;
+        height: auto !important;
+        float: none !important;
+        margin: 0 5% 5% !important;
+    }
+}

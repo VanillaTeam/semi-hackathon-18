@@ -1,0 +1,34 @@
+    <!-- Footer -->
+	<footer class="container">
+        <div class="github">
+		    <a href="#" target="_blank"><i class="github"></i></a>
+        </div>
+		<div class="copy">&copy; Vanilla Team, 2018</div>
+	</footer>
+    <!-- Остальные стили -->
+    <link rel="stylesheet" type="text/css" href="<?=$CSS_STATIC_HTTP_PATH;?>/about.css" >
+    <link rel="stylesheet" type="text/css" href="<?=$CSS_STATIC_HTTP_PATH;?>/members.css" >
+    <!-- Библиотеки, framework'и, наши скрипты -->
+    <script type="text/javascript" src="<?=$JS_STATIC_HTTP_PATH;?>/jquery-3.3.1.min.js"></script>
+    <script src="<?=$JS_STATIC_HTTP_PATH;?>/animation.js"></script>
+    <?php if (!$IS_MOBILE): ?><script src="<?=$JS_STATIC_HTTP_PATH;?>/menu.js"></script><?php endif; ?>
+    <script type="text/javascript" src="<?=$JS_STATIC_HTTP_PATH;?>/jquery.lazy.min.js"></script>
+    <script type="text/javascript">
+        // Вычисление высот списков языков программирования
+        $('.langs').each(function () {
+            // Количество элементов списка
+            let count = this.children.length;
+            // 5.344 - высота пункта, 1.5 - высота отступа
+            let height = count * 5.344 + (count + 1) * 1.5;
+            $(this).height(height + 'vmin');
+        });
+        // Пост загрузка изображений
+        $(function() {
+            $('.lazy').lazy();
+        });
+    </script>
+    <script type="text/javascript" src="<?=$JS_STATIC_HTTP_PATH;?>/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="<?=$JS_STATIC_HTTP_PATH;?>/vue.min.js"></script>
+    <script src="<?=$JS_STATIC_HTTP_PATH;?>/blocks-animation.js"></script>
+</body>
+</html>

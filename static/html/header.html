@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="<?=$CHARSET?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <?php if ($IS_MOBILE): ?><meta name="viewport" content="maximum-scale=1.0, user-scalable=no"><?php endif; ?>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>Vanilla Team</title>
+    <!-- Наиболее важные стили (для загрузки в первую очередь) -->
+    <link rel="stylesheet" type="text/css" href="<?=$CSS_STATIC_HTTP_PATH;?>/main.css" >
+    <?php if (!$IS_MOBILE): ?><link rel="stylesheet" type="text/css" href="<?=$CSS_STATIC_HTTP_PATH;?>/menu.css" ><?php endif; ?>
+</head>
+<body>

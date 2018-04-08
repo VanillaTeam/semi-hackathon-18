@@ -1,0 +1,43 @@
+/* Стили для верхнего меню */
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display: none;
+}
+
+#menu li {
+    float: right;
+}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.7em;
+    text-decoration: none;
+}
+
+#menu li a:hover:not(.menu_active) {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.menu_active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Стили для узких экранов */
+
+@media (max-width: 700px) {
+    #menu {
+        font-size: 0.8em;
+    }
+}
